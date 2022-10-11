@@ -1,0 +1,5 @@
+module.exports = {
+  ABILITY_ACTIVATION_CHANCE: 0.1,
+  ROUND_LIMIT: 50,
+  EXP_VISUALIZER: 125,
+};
