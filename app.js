@@ -16,7 +16,11 @@ const userRouter = require('./routes/userRoutes');
 
 const app = express();
 app.use(helmet());
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://bb-onlinearena.netlify.app',
+  })
+);
 app.use(express.json({ limit: '10kb' }));
 app.use(mongoSanitize());
 app.use(xss());

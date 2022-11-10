@@ -1,10 +1,8 @@
 const { promisify } = require('util');
 const jwt = require('jsonwebtoken');
-const crypto = require('crypto');
 const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
-// const sendEmail = require('../utils/email');
 
 const signToken = (id) =>
   jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -44,7 +42,7 @@ exports.signup = catchAsync(async (req, res, next) => {
 exports.login = catchAsync(async (req, res, next) => {
   const { name, password } = req.body;
 
-   if (!name || !password) {
+  if (!name || !password) {
     return next(new AppError('Please provide email and password', 400));
   }
 
@@ -58,7 +56,6 @@ exports.login = catchAsync(async (req, res, next) => {
 });
 
 exports.protect = catchAsync(async (req, res, next) => {
-
   let token;
   if (
     req.headers.authorization &&
