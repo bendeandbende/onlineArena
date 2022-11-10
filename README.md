@@ -1,3 +1,5 @@
+## FE has been deployed for the game, check it out at https://bb-onlinearena.netlify.app
+
 ### Online Arena game
 
 Sign up / log in, create characters and make them battle in the arena!
