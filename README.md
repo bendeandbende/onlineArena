@@ -1,4 +1,4 @@
-## FE has been deployed for the game, check it out at https://bb-onlinearena.netlify.app
+## ~~FE has been deployed for the game, check it out at https://bb-onlinearena.netlify.app~~ The server is currently down.
 
 ### Online Arena game
 
